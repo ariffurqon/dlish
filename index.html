@@ -2,12 +2,19 @@
 <html lang="en" ng-app="dlish">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>dlish</title>
-	<!-- Material Lite CSS and JavaScript files	-->
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.pink-purple.min.css" />
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>dLish</title>
+	<!-- css -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header></header>
+	<div class="page">
+		<main class="cf" ng-view>
+		</main>
+	</div>
 
 	<!-- angularJS -->
   	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -16,14 +23,12 @@
 
 	<!-- custom script -->
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/signupCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/successCtrl.js"></script>
 	
-	
-</head>
-<body>
-	<div>
-		<main ng-controller="MainCtrl">
-			{{test}}
-		</main>
-	</div>
+
 </body>
 </html>
+
+
+
