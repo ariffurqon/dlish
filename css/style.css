@@ -152,6 +152,7 @@ h3{
 }
 
 p {
+  color: #F50057;
 }
 
 a.small {
@@ -208,9 +209,9 @@ input[type=radio] {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 0;
-    background: #F50057;
+    background: #3F51B5;
     color: white;
-    background-color: #F50057;
+    background-color: #3F51B5;
     background-size: 18px 18px;
     min-width: 28px;
     min-height: 28px;
@@ -226,7 +227,7 @@ input[type=radio] {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #C5CAE9; }
+.btn:hover { background-color: #3F51B5; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #859835; background-image: url(../images/icons/icon_checkmark.png); }
@@ -628,7 +629,7 @@ input.ng-valid.ng-touched {
 }
 
 .ng-invalid .btn {
-  background: gray;
+  background: #F50057;
 }
 
 .error {

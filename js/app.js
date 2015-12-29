@@ -1,4 +1,5 @@
-var myApp = angular.module('dlish', ['ngRoute']);
+var myApp = angular.module('dlish', ['ngRoute', 'firebase'])
+	.constant('FIREBASE_URL', 'https://dlish.firebaseIO.com/');
 
 myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider

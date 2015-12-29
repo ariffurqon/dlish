@@ -2,7 +2,7 @@
 	<form name="myform" ng-submit="signup()" novalidate>
 		<div class="textintro">
 			<h2>Sign Up</h2>
-			<p>sign up & let's get the party started!</p>
+			<h4>sign up & let's get the party started!</h4>
 			<p class="message" ng-show="message">{{message}}</p>
 		</div>
 
@@ -20,7 +20,7 @@
 			<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password is required</p>
 		</fieldset>
 
-		<button type="submit" class="btn">SignUp</button>
+		<button type="submit" class="btn" ng-disabled="myform.$invalid">SignUp</button>
 		<P>Or <a ng-href="#/login">Login</a></P>
 	</form>
 </section>
