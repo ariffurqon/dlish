@@ -1,4 +1,6 @@
 myApp.controller('signupCtrl', ['$scope', function($scope) {
-	$scope.test = "Hello lover...";
+	$scope.login = function() {
+		$scope.message = "Welcome" + $scope.user.email;
+	}
 }]);
 

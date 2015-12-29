@@ -1,20 +1,26 @@
 <section class="card signup">
- 	<form name="myform">
- 		<div class="textintro">
- 			<h2>Sign Up</h2>
- 			<p>sign up & let's get the party started!</p>
- 			<p>{{test}}</p>
- 		</div>
- 
- 		<fieldset>
- 			<input type="firstname" name="firstname" placeholder="First Name">
- 			<input type="lastname" name="lastname" placeholder="Last Name">
- 			<input type="email" name="email" placeholder="Email">
- 			<input type="password" name="password" placeholder="Password">
- 		</fieldset>
- 
- 		<button type="submit" class="btn">SignUp</button>
- 		<P>Or<a href="#/login">Login</a></P>
- 	</form>
- </section> 
+	<form name="myform" ng-submit="signup()" novalidate>
+		<div class="textintro">
+			<h2>Sign Up</h2>
+			<p>sign up & let's get the party started!</p>
+			<p class="message" ng-show="message">{{message}}</p>
+		</div>
 
+		<fieldset>
+			<input type="firstname" name="firstname" placeholder="First Name" ng-model="user.firstname" ng-required="true">
+			<p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">Password required</p>
+
+			<input type="lastname" name="lastname" placeholder="Last Name" ng-model="user.lastname" ng-required="true">
+			<p class="error validationerror" ng-show="myform.lastname.$invalid && myform.lastname.$touched">Password required</p>
+
+			<input type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true">
+			<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
+
+			<input type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
+			<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password is required</p>
+		</fieldset>
+
+		<button type="submit" class="btn">SignUp</button>
+		<P>Or <a ng-href="#/login">Login</a></P>
+	</form>
+</section>
