@@ -28,7 +28,6 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 html {
-  padding-top: 100px;
   line-height: 1; }
 
 ol, ul {
@@ -455,9 +454,10 @@ nav {
   width: 80%;
   font-size: 1.6em;
   text-align: left;
-  color: #1B7998;
+  color: #3F51B5;
   text-decoration: none;
   text-align: left;
+  padding-top: 100px;            s
 }
 
 .logo a:hover {
@@ -497,7 +497,7 @@ nav ul li a {
 }
 
 nav li a:hover {
-  color: #E76C5A;
+  color: #F50057;
 }
 
 .userinfo {
