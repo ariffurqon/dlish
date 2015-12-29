@@ -13,7 +13,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 		})
 		.when('/success', {
 			templateUrl: 'views/success.html',
-			controller: 'SuccessCtrl'
+			controller: 'successCtrl'
 		})
 		.otherwise({
 			redirectTo: '/login'

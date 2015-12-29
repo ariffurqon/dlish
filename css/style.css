@@ -504,7 +504,8 @@ nav li a:hover {
 .userinfo {
   text-align: center;
   font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  color: #F50057;
 }
 
 .userinfo a {
