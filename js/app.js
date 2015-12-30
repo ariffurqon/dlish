@@ -23,9 +23,9 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
 			templateUrl: 'views/signup.html',
 			controller: 'signupCtrl'
 		})
-		.when('/success', {
-			templateUrl: 'views/success.html',
-			controller: 'successCtrl',
+		.when('/listings', {
+			templateUrl: 'views/listings.html',
+			controller: 'listingsCtrl',
 			resolve: {
 		        currentAuth: function(Authentication) {
 		          return Authentication.requireAuth();
