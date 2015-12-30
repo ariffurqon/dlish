@@ -1,5 +1,12 @@
-<div class="logo"><a href="/">DL!SH</a></div>
+<div class="logo"><a ng-href="#/">DL!SH</a></div>
  	<ul>
+ 		<li>
+ 			<a ng-show="currentUser" href="#/listings">Listings
+				<span ng-show="howManyListings" class="badge">
+					{{howManyListings}}
+				</span>
+ 			</a>
+ 		</li>
  		<li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
  		<li><a ng-hide="currentUser" ng-href="#/signup">SignUp</a></li>
  	</ul> 

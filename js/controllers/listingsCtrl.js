@@ -15,6 +15,14 @@ myApp.controller('listingsCtrl',
 			var listingsInfo = $firebaseArray(listingsRef);
 			$scope.listings = listingsInfo;
 
+			listingsInfo.$loaded().then(function(data) {
+								$rootScope.howManyListings = listingsInfo.length;
+							}); // make sure listing data is loaded
+
+			listingsInfo.$watch(function(data) {
+					$rootScope.howManyListings = listingsInfo.length;
+				}); //updating  the badge
+
 			$scope.addListing = function() {
 				listingsInfo.$add({
 					name: $scope.listingname,

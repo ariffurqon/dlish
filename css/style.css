@@ -97,7 +97,7 @@ body  {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 40px;
-  text-align: left;
+  text-align: center;
   position: relative;
   opacity: .95;
   border-radius: 0;
@@ -548,7 +548,7 @@ nav li a:hover {
   padding: 10px 20px 10px 15px;
   margin: 3px 10px;
   border-radius: 0;
-  border: 1px solid #C5C5C5;
+  border: 5px solid #C5C5C5;
 
 
 }
@@ -637,3 +637,21 @@ input.ng-valid.ng-touched {
   color: red;
   padding-bottom: 10px;
 }
+.badge {
+  display: inline-block;
+  min-width: 1em;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1em;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #F50057;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
+}
+
