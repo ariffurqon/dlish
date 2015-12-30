@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/services/auth.js"></script>
 	<script type="text/javascript" src="js/controllers/signupCtrl.js"></script>
 	<script type="text/javascript" src="js/controllers/listingsCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/checkinsCtrl.js"></script>
 		
 </head>
 <body>
@@ -33,7 +34,7 @@
 	<div class="page">
 		<div class="userinfo" ng-show="currentUser" ng-controller="signupCtrl">
 			<span class="userinfo">Hello {{currentUser.firstname}}</span>
-			<a ng-href="#/login" ng-click="logout()">LogOut</a>
+			<a ng-href="#/login" ng-click="logout()">, LogOut</a>
 		</div>
 
 		<main class="cf" ng-view=""></main>
