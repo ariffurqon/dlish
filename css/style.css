@@ -97,7 +97,7 @@ body  {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 40px;
-  text-align: center;
+  text-align: left;
   position: relative;
   opacity: .95;
   border-radius: 0;
@@ -231,7 +231,7 @@ input[type=radio] {
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #859835; background-image: url(../images/icons/icon_checkmark.png); }
-.btn-delete { background-color: #C94C24; background-image: url(../images/icons/icon_trash.png); }
+.btn-delete { background-color: #F50057; background-image: url(../images/icons/icon_trash.png); }
 .btn-love { background-image: url(../images/icons/icon_heart.png); }
 .btn-email { background-image: url(../images/icons/icon_email.png); }
 .btn-listing { background-image:  url(../images/icons/icon_listing.png); }

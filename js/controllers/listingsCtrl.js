@@ -13,6 +13,7 @@ myApp.controller('listingsCtrl',
 			var listingsRef = new Firebase(FIREBASE_URL + 'users/' + 
 				$rootScope.currentUser.$id + '/listings');
 			var listingsInfo = $firebaseArray(listingsRef);
+			$scope.listings = listingsInfo;
 
 			$scope.addListing = function() {
 				listingsInfo.$add({
@@ -22,6 +23,9 @@ myApp.controller('listingsCtrl',
 					$scope.listingname = '';
 				}); 
 			}; // add listing
+			$scope.deleteListing = function(key) {
+				listingsInfo.$remove(key);
+			}; //deleteListing
 		} // user authenticated
 	});
 }]); // controller
