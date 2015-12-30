@@ -13,7 +13,7 @@ myApp.run(['$rootScope', '$location',
 }]); //run
 
 
-myApp.config(['$routeProvider', function($routeProvider) {
+myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/login', {
 			templateUrl: 'views/login.html',
@@ -35,5 +35,12 @@ myApp.config(['$routeProvider', function($routeProvider) {
 		.otherwise({
 			redirectTo: '/login'
 		})
+
+		//remove the hash and make pretty URLs
+	    $locationProvider.html5Mode({
+	        enabled: true,
+	        requireBase: false
+	    });
+
 }]);
 
