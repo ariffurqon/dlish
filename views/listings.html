@@ -1,6 +1,15 @@
 <div class="card cf">
  	<div class="textintro">
  		<h2>add a listing</h2>
- 		<p>{{ message }}</p>
+ 		<p>type a listing name and hit ' + ' </p>
  	</div>
+
+ 	<form class="formgroup addlisting cd" name="myform" ng-submit="addListing()" novalidate>
+ 		<div class="inputwrapper">
+ 			<input type="text" name="listingname" placeholder="Listing name" ng-model="listingname" ng-required="true">
+ 		</div>
+
+ 		<button type="submit" class="btn" ng-disabled="myform.$invalid">+</button>
+ 		
+ 	</form>
  </div> 

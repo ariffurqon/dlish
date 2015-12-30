@@ -234,7 +234,7 @@ input[type=radio] {
 .btn-delete { background-color: #C94C24; background-image: url(../images/icons/icon_trash.png); }
 .btn-love { background-image: url(../images/icons/icon_heart.png); }
 .btn-email { background-image: url(../images/icons/icon_email.png); }
-.btn-meeting { background-image:  url(../images/icons/icon_meeting.png); }
+.btn-listing { background-image:  url(../images/icons/icon_listing.png); }
 
 .btn-pick {
   background: #2D8BCF url(../images/icons/icon_dice.png) 5px center no-repeat;
@@ -516,34 +516,34 @@ nav li a:hover {
     width: auto;
 }
 
-.addmeeting {
+.addlisting {
     width:100%;
 }
 
-.addmeeting .inputwrapper {
+.addlisting .inputwrapper {
   margin-right:80px;
 }
 
-.addmeeting .inputwrapper input {
+.addlisting .inputwrapper input {
     float: left;
     width: 100%;
 }
 
-.addmeeting button {
+.addlisting button {
   width: 60px;
   margin-left: 20px;
   vertical-align: center;
 }
 
-.meetings {
+.listings {
   padding-top: 10px;
 }
 
-.meetings h2 {
+.listings h2 {
   padding-bottom: 5px;
 }
 
-.meetings .meeting {
+.listings .listing {
   display: inline-block;
   padding: 10px 20px 10px 15px;
   margin: 3px 10px;
@@ -553,17 +553,17 @@ nav li a:hover {
 
 }
 
-.meetings .meeting .btn {
+.listings .listing .btn {
   margin-right: 4px;
   padding: 1px 8px;
 }
 
-.meetings .meeting .text {
+.listings .listing .text {
   display: inline-block;
   vertical-align: bottom;
 }
 
-.meetings .meeting .text a{
+.listings .listing .text a{
   text-decoration: none;
 }
 

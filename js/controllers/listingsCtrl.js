@@ -1,3 +1,3 @@
-myApp.controller('listingsCtrl', ['$scope', function($scope) {
+myApp.controller('listingsCtrl', ['$scope', '$rootScope', function($scope, $rootScope) {
 	
 }]);
