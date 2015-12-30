@@ -17,7 +17,8 @@
 			<input type="activity" name="activity" placeholder="activity" ng-model="user.activity" ng-required="true">
 			<p class="error validationerror" ng-show="myform.activity.$invalid && myform.activity.$touched">activity type is required</p>
 
-			<input type="address/contact" name="address/contact" placeholder="address/contact">
+			<input type="address/contact" name="address/contact" placeholder="address/contact" ng-model="user.contact" ng-required="true">
+			<p class="error validationerror" ng-show="myform.contact.$invalid && myform.contact.$touched">contact is required</p>
 			
 		</fieldset>
 
