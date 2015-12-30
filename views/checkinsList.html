@@ -1,0 +1,17 @@
+<div class="card checkinList">
+	<h2>Your ultimate places to go are: </h2>
+	
+
+	<ul class="userlist cf">
+		<li ng-repeat="checkin in checkins">
+			<div class="checkin">
+				<div class="info">
+					<h2>{{checkin.place}}</h2>
+					<div class="date">
+						{{ checkin.date | date: "MMM d, yy h:mm a"}}
+					</div> <!-- date -->
+				</div> <!-- info -->
+			</div> <!-- checkin -->
+		</li>
+	</ul>
+</div>
