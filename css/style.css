@@ -229,8 +229,8 @@ input[type=radio] {
 .btn .btn-right { float: right; }
 .btn:hover { background-color: #F50057; }
 
-.btn-list { background-color: #9C27B0; background-image: url(../images/icons/icon_list.png); }
-.btn-checkin { background-color: #FFEB3B; background-image: url(../images/icons/icon_checkmark.png); }
+.btn-list { background-color: transparent; background-image: url(../images/icons/icon_list.png); }
+.btn-checkin { background-color: transparent; background-image: url(../images/icons/icon_checkmark.png); }
 .btn-delete { background-color: transparent; background-image: url(../images/icons/icon_trash.png); }
 .btn-love { background-color: transparent; background-image: url(../images/icons/icon_heart.png); }
 .btn-email { background-image: url(../images/icons/icon_email.png); }
@@ -649,7 +649,7 @@ input.ng-valid.ng-touched {
   white-space: nowrap;
   vertical-align: baseline;
   background-color: #F50057;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 .badge:empty {
   display: none;
