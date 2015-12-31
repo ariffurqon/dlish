@@ -227,7 +227,7 @@ input[type=radio] {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #3F51B5; }
+.btn:hover { background-color: #F50057; }
 
 .btn-list { background-color: #9C27B0; background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #FFEB3B; background-image: url(../images/icons/icon_checkmark.png); }
@@ -237,7 +237,7 @@ input[type=radio] {
 .btn-listing { background-image:  url(../images/icons/icon_listing.png); }
 
 .btn-pick {
-  background: #2D8BCF url(../images/icons/icon_dice.png) 5px center no-repeat;
+  background: #3F51B5 url(../images/icons/icon_dice.png) 5px center no-repeat;
   background-size: 20px 20px;
   padding: 5px 5px 5px 30px;
   font-size: .8em;
