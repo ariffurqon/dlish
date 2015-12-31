@@ -1,9 +1,12 @@
 <div class="card checkinList">
-	<h2>Your ultimate places to go are: </h2>
+	<p>Here's a list of your latest discovery:</p>
 	
-
+	<div class="search cf">
+		<h2>Search Checkins</h2>
+		<input type="text" ng-model="query" placeholder="Search for your discovery">
+	</div>
 	<ul class="userlist cf">
-		<li ng-repeat="checkin in checkins">
+		<li ng-repeat="checkin in checkins | filter: query">
 			<div class="checkin">
 				<div class="buttons" ng-show="currentUser">
 					<button class="btn btn-delete tooltip"
