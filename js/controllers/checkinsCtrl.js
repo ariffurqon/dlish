@@ -28,6 +28,15 @@ myApp.controller('checkinsCtrl',
 		}; //myData
 	checkinsInfo.$add(myData).then(function() {
 		$location.path('#/checkins' + $scope.whichuser + '/' + $scope.whichlisting + '/checkinsList');
-	}); // send data to firebase
+		}); // send data to firebase
 	}; // addCheckin
+
+	$scope.deleteCheckin = function(id) {
+ 		var refDel = new Firebase(FIREBASE_URL + 'users/' +
+ 			$scope.whichuser + '/listings/' +
+ 			$scope.whichlisting + '/checkins/' + id);
+ 		var record = $firebaseObject(refDel);
+ 		record.$remove(id);
+ 	};
+
  }]); // controller
