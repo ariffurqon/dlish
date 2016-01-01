@@ -19,7 +19,7 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 				email: user.email,
 				password: user.password
 			}).then(function(regUser){
-				$location.path('/success');
+				$location.path('/listings');
 			}).catch(function(error){
 			$rootScope.message = error.message;
 			});
@@ -50,6 +50,8 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 
 					myObject.login(user);
 
+				}).then(function(regUser){
+					$location.path('/listings');
 				}).catch(function(error) {
 					$rootScope.message = error.message;
 				}); //createUser

@@ -14,7 +14,9 @@
  	</form>
  	<br>
  	<h2>your listings:</h2>
- 	<div class="listing" ng-repeat="(key, listing) in listings">
+
+
+	 	<div class="userlist cf" ng-repeat="(key, listing) in listings">
  	  		<button class="btn btn-delete tooltip" 
  	  			ng-click="deleteListing(key)">
  	  			<span>Delete this listing</span>
@@ -28,6 +30,5 @@
  	  			<span>View of the checked-in Listings</span>
 			</a>
  	  		<span class="text">{{listing.name}}</span>
- 	</div>
-
+	 	</div>
  </div> 
