@@ -4,7 +4,7 @@
  		<p>type a listing name and hit ' + ' </p>
  	</div>
 
- 	<form class="formgroup addlisting cd" name="myform" ng-submit="addListing()" novalidate>
+ 	<form class="formgroup addlisting cf" name="myform" ng-submit="addListing()" novalidate>
  		<div class="inputwrapper">
  			<input type="text" name="listingname" placeholder="Listing name" ng-model="listingname" ng-required="true">
  		</div>
@@ -16,7 +16,7 @@
  	<h2>your listings:</h2>
 
 
-	 	<div class="userlist cf" ng-repeat="(key, listing) in listings">
+	 	<div class="listing" ng-repeat="(key, listing) in listings">
  	  		<button class="btn btn-delete tooltip" 
  	  			ng-click="deleteListing(key)">
  	  			<span>Delete this listing</span>

@@ -13,7 +13,7 @@ myApp.controller('checkinsCtrl',
 
 	var ref = new Firebase(FIREBASE_URL + 'users/' + 
 		$scope.whichuser + '/listings/' +
-		$scope.whichlisting + '/checkins/');
+		$scope.whichlisting + '/checkins');
 
 	var checkinsList = $firebaseArray(ref);
 	$scope.checkins = checkinsList;
@@ -31,8 +31,9 @@ myApp.controller('checkinsCtrl',
 			contact: $scope.user.contact,
 			date: Firebase.ServerValue.TIMESTAMP
 		}; //myData
-	checkinsInfo.$add(myData).then(function() {
-		$location.path('#/checkins' + $scope.whichuser + '/' + $scope.whichlisting + '/checkinsList');
+	checkinsInfo.$add(myData)
+		.then(function() {
+		$location.path('/checkins/' + $scope.whichuser + '/' + $scope.whichlisting + '/checkinsList');
 		}); // send data to firebase
 	}; // addCheckin
 

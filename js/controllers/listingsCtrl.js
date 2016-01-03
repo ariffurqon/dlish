@@ -15,9 +15,11 @@ myApp.controller('listingsCtrl',
 			var listingsInfo = $firebaseArray(listingsRef);
 			$scope.listings = listingsInfo;
 
-			listingsInfo.$loaded().then(function(data) {
-								$rootScope.howManyListings = listingsInfo.length;
-							}); // make sure listing data is loaded
+			listingsInfo.$loaded()
+				.then(function(data) {
+					$rootScope.howManyListings = listingsInfo.length;
+				}); // make sure listing data is loaded
+
 
 			listingsInfo.$watch(function(data) {
 					$rootScope.howManyListings = listingsInfo.length;
@@ -27,7 +29,7 @@ myApp.controller('listingsCtrl',
 				listingsInfo.$add({
 					name: $scope.listingname,
 					date: Firebase.ServerValue.TIMESTAMP
-				}).then (function() {
+				}).then(function(){
 					$scope.listingname = '';
 				}); 
 			}; // add listing
