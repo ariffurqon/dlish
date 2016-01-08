@@ -1,6 +1,6 @@
-# dlish: foodie note taker apps #
+### dlish: foodie note taker apps ###
 ================================================
-
+##### built with Angular.js + Firebase #####
 ##### clone this repo: #####
 
 ```
